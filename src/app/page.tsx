@@ -7,6 +7,7 @@ import layoutScreen from './layout-screen.png'
 import countryScreen from './website-screen.png'
 
 export default function Home() {
+  console.log('Home')
   return (
     <AppProvider>
       <main className="flex min-h-screen flex-col justify-between bg-slate-100 p-12">
