@@ -1,3 +1,5 @@
+import type { Metadata } from 'next'
+
 import { CountrySelector } from '@/components/country-selector'
 import CarestinoLogo from '@/components/icons/logo'
 import { RevalidateGrid } from '@/components/revalidate-grid'
@@ -6,8 +8,12 @@ import { AppProvider } from '@/context/global-state'
 import layoutScreen from './layout-screen.png'
 import countryScreen from './website-screen.png'
 
+export const metadata: Metadata = {
+  title: 'Revalidate Ecommerce | Carestino',
+  description: 'Administra el cache del ecommerce de Carestino'
+}
+
 export default function Home() {
-  console.log('Home')
   return (
     <AppProvider>
       <main className="flex min-h-screen flex-col justify-between bg-slate-100 p-12">
